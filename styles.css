@@ -1,0 +1,238 @@
+/* Base Styles */
+body {
+    margin: 0;
+    font-family: "Gill Sans Nova", sans-serif;
+    background: #f4f4f4; /* Fallback background color */
+    color: #333; /* Dark text color */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes up at least the full height of the viewport */
+}
+
+header {
+    padding: 20px;
+    background: #fff; /* White background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1000;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0; /* Correct padding */
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #333; /* Dark text color */
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007bff; /* Blue color for hover */
+    transform: translateY(-5px); /* Move up on hover */
+}
+
+nav ul li ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    z-index: 1000;
+    padding: 15px 30px; /* Standardized padding for all dropdowns */
+}
+
+nav ul li:hover > .dropdown {
+    display: flex;
+}
+
+
+
+nav ul li ul li a {
+    text-align: left;
+    padding: 10px 20px; /* Standardized padding for dropdown items */
+    white-space: nowrap;
+    display: block;
+    
+}
+
+.sub-dropdown {
+  display: none;
+  position: absolute;
+  top: 0;        /* Align with the top of the parent item */
+  left: 100%;    /* Position directly to the right */
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  min-width: 150px;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+/* Show sub-dropdown only when hovering over the What We Do option */
+.dropdown li:hover > .sub-dropdown {
+  display: flex;
+}
+
+/* Optional: Hover effects for links */
+nav ul li a:hover {
+  background: #f0f0f0;
+}
+
+
+
+
+
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    color: white; /* Blue color for headings */
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+    font-weight: 250;
+color: white;
+}
+
+p {
+    font-size: 1.1em;
+    margin: 20px 0;
+    opacity: 0.8;
+color: white;
+}
+
+footer {
+    font-size: 0.9em;
+    opacity: 0.8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: black; /* Blue background */
+    color: #fff; /* White text color */
+    position: fixed; /* Fixed position */
+    bottom: 0; /* Stays at the bottom of the viewport */
+    width: 100%; /* Full width */
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px; /* Increased gap between icons */
+    justify-content: center; /* Center align the icons */
+}
+
+.social-icons a {
+    color: #fff; /* White color for icons */
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ffc107; /* Gold color for hover */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    flex-grow: 1; /* Ensure the container takes up the remaining space */
+}
+
+.content {
+    width: 50%;
+    text-align: left;
+}
+
+.content h1 {
+    font-size: 2.5em;
+    font-weight: 100;
+    color: #007bff;
+}
+
+.content p {
+    font-size: 1.1em;
+}
+
+/* Under Construction Banner */
+.construction-banner {
+    background-color: #ffcc00;
+    color: #000;
+    text-align: center;
+    padding: 5px 0;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Dynamic Background */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    animation: changeBackground 90s infinite linear, zoomEffect 40s infinite ease-in-out;
+}
+@keyframes changeBackground {
+    0% {
+        background-image: url('C:/Users/vinee/Downloads/test/photo1.avif');
+    }
+    25% {
+        background-image: url('C:/Users/vinee/Downloads/test/photo2.avif');
+    }
+    50% {
+        background-image: url('C:/Users/vinee/Downloads/test/photo3.avif');
+    }
+    100% {
+        background-image: url('C:/Users/vinee/Downloads/test/photo4.avif');
+    }
+}
+
+@keyframes zoomEffect {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
