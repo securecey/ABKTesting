@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
       e.preventDefault();
       
       const page = this.getAttribute('data-page');
-      fetch(page)
+      fetch(it_security.html)
         .then(response => {
           if (!response.ok) {
             throw new Error(`Network response was not ok. Status: ${response.status} ${response.statusText}`);
