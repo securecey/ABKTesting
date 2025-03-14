@@ -113,7 +113,7 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column; /* Stack elements vertically */
     align-items: center; /* Ensure text stays centered */
-    gap: 10px; /* Add spacing between h1, h2, and p */
+    gap: 5px; /* Add spacing between h1, h2, and p */
 }
 
 /* Prevent h1 from wrapping */
@@ -128,13 +128,13 @@ nav ul li a:hover {
 .container h2 {
     font-size: 2em;
     font-weight: 400;
-    color: red;
+    color: white;
 }
 
 /* p styles */
 .container p {
     font-size: 1.2em;
-    color: red;
+    color: white;
     max-width: 800px; /* Restrict width for better readability */
     line-height: 1.5;
 }
