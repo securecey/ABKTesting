@@ -146,17 +146,17 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     background: black; /* Blue background */
     color: #fff; /* White text color */
-    position: fixed; /* Fixed position */
+    position: absolute; /* Fixed position */
     bottom: 0; /* Stays at the bottom of the viewport */
     width: 100%; /* Full width */
 }
 
 .social-icons {
     display: flex;
-    gap: 15px; /* Increased gap between icons */
+    gap: 10px; /* Increased gap between icons */
     justify-content: center; /* Center align the icons */
 }
 
