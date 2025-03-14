@@ -149,7 +149,7 @@ footer {
     padding: 10px;
     background: black; /* Blue background */
     color: #fff; /* White text color */
-    position: absolute; /* Fixed position */
+    position: fixed; /* Fixed position */
     bottom: 0; /* Stays at the bottom of the viewport */
     width: 100%; /* Full width */
 }
