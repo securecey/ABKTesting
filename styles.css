@@ -105,24 +105,36 @@ nav ul li a:hover {
 
 
 
-h1 {
+/* Container for the main content */
+.container {
+    max-width: 800px;
+    margin: 100px auto; /* Adjust spacing from the top */
+    text-align: center; /* Center align text */
+    padding: 20px;
+}
+
+/* Change position of H1, H2, and P */
+.container h1 {
     font-size: 3em;
-    margin-bottom: 0.5em;
-    color: white; /* Blue color for headings */
+    font-weight: bold;
+    color: #007bff; /* Blue color */
+    text-align: left; /* Change to left, right, or center */
+    margin-bottom: 10px;
 }
 
-h2 {
-    font-size: 1.5em;
-    margin-top: 0;
-    font-weight: 250;
-color: white;
+.container h2 {
+    font-size: 1.8em;
+    font-weight: 400;
+    color: #555;
+    text-align: left;
+    margin-bottom: 10px;
 }
 
-p {
-    font-size: 1.1em;
-    margin: 20px 0;
-    opacity: 0.8;
-color: white;
+.container p {
+    font-size: 1.2em;
+    color: #333;
+    text-align: justify; /* Align text to left or justify */
+    line-height: 1.5; /* Improve readability */
 }
 
 footer {
