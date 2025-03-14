@@ -228,22 +228,23 @@ body, html {
 }
 /* Contact Page Styles */
 .contact-container {
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.6); /* White with 60% transparency */
     max-width: 800px;
     margin: 80px auto;
     padding: 20px;
-    background: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     text-align: center;
 }
 
+/* Contact Page Heading */
 .contact-container h1 {
     font-size: 2em;
     color: #007bff;
     margin-bottom: 10px;
 }
 
+/* Contact Page Paragraphs */
 .contact-container p {
     font-size: 1.2em;
     color: #333;
@@ -258,6 +259,7 @@ body, html {
     gap: 10px;
 }
 
+/* Contact Info Paragraphs */
 .contact-info p {
     display: flex;
     align-items: center;
@@ -279,6 +281,7 @@ body, html {
         padding: 15px;
     }
 }
+
 /* Apply background ONLY to the contact page */
 body.contact-page {
     background: url('photo4.avif') no-repeat center center fixed;
@@ -289,4 +292,3 @@ body.contact-page {
     padding: 0;
     background-position: center;
 }
-
