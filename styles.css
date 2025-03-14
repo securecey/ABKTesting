@@ -126,13 +126,13 @@ nav ul li a:hover {
 .container h2 {
     font-size: 2em;
     font-weight: 400;
-    color: #555;
+    color: white;
     margin-bottom: 5px; /* Space between h2 and p */
 }
 
 .container p {
     font-size: 1.2em;
-    color: #333;
+    color: white;
     line-height: 1.5; /* Improve readability */
     text-align: center;
     max-width: 800px; /* Keep text width balanced */
