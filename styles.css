@@ -108,7 +108,7 @@ nav ul li a:hover {
 /* Container for the main content */
 .container {
     max-width: 90%; /* Adjust width */
-    margin: 50px auto; /* Centering */
+    margin: 0; /* Centering */
     text-align: center; /* Center align text */
     display: flex;
     flex-direction: column; /* Stack elements vertically */
