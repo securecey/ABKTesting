@@ -26,6 +26,17 @@ document.write(`
                     </li>
 
                     <li class="has-sub-dropdown">
+                        <a href="#">Data Management Solutions</a>
+                        <ul class="sub-dropdown">
+                            <li><a href="#">NAS – Dell EMC, HP, Netgear, QNAP.</a></li>
+                            <li><a href="#">SAN – Dell EMC, IBM, Pure Storage, NetApp, HP.</a></li>
+                            <li><a href="#">Unified Storage – Dell EMC, NetApp, IBM, HP.</a></li>
+                            <li><a href="#">Tape Library & Auto Loaders – Dell EMC, IBM, HP.</a></li>
+                            <li><a href="#">Enterprise Servers – Dell EMC, HP, Lenovo, NEC.</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="has-sub-dropdown">
                         <a href="#">Backup & Archival Solutions</a>
                         <ul class="sub-dropdown">
                             <li><a href="#">Backup – DellEMC Data Protection, VERITAS NetBackup, Commvault</a></li>
