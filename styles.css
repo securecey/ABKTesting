@@ -115,6 +115,9 @@ nav ul li a:hover {
     align-items: center; /* Ensure text stays centered */
     gap: 5px; /* Add spacing between h1, h2, and p */
 }
+.container h1, .container h2, .container p {
+    margin: 0; /* Removes default browser margins */
+}
 
 /* Prevent h1 from wrapping */
 .container h1 {
