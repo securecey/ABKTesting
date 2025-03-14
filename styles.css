@@ -107,35 +107,38 @@ nav ul li a:hover {
 
 /* Container for the main content */
 .container {
-    max-width: 800px;
-    margin: 100px auto; /* Adjust spacing from the top */
+    max-width: 90%; /* Adjust width */
+    margin: 50px auto; /* Centering */
     text-align: center; /* Center align text */
-    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Ensure text stays centered */
+    gap: 15px; /* Add spacing between h1, h2, and p */
 }
 
-/* Change position of H1, H2, and P */
+/* Prevent h1 from wrapping */
 .container h1 {
-    font-size: 3em;
+    font-size: clamp(2rem, 5vw, 3rem); /* Responsive font size */
+    white-space: nowrap; /* Prevent wrapping */
+    color: white;
     font-weight: bold;
-    color: #007bff; /* Blue color */
-    text-align: left; /* Change to left, right, or center */
-    margin-bottom: 10px;
 }
 
+/* h2 styles */
 .container h2 {
-    font-size: 1.8em;
+    font-size: 2em;
     font-weight: 400;
-    color: #555;
-    text-align: left;
-    margin-bottom: 10px;
+    color: blue;
 }
 
+/* p styles */
 .container p {
     font-size: 1.2em;
-    color: #333;
-    text-align: justify; /* Align text to left or justify */
-    line-height: 1.5; /* Improve readability */
+    color: blue;
+    max-width: 800px; /* Restrict width for better readability */
+    line-height: 1.5;
 }
+
 
 footer {
     font-size: 0.9em;
