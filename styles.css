@@ -280,7 +280,12 @@ body, html {
 }
 /* Apply background ONLY to the contact page */
 body.contact-page {
-    background: url('contactus.jpg') no-repeat center center fixed;
+    background: url('photo4.avif') no-repeat center center fixed;
     background-size: cover;
+    height: 100vh; /* Ensures full viewport height */
+    width: 100vw;  /* Ensures full viewport width */
+    margin: 0;
+    padding: 0;
+    background-position: center;
 }
 
