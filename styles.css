@@ -106,41 +106,38 @@ nav ul li a:hover {
 
 
 /* Container for the main content */
-.container {
-    max-width: 90%; /* Adjust width */
-    margin: 0; /* Centering */
-    text-align: center; /* Center align text */
-    display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Ensure text stays centered */
-    gap: 5px; /* Add spacing between h1, h2, and p */
-}
-.container h1, .container h2, .container p {
-    margin: 0; /* Removes default browser margins */
+/* Remove default margin & padding */
+.container h1,
+.container h2,
+.container p {
+    margin: 0; /* Removes extra spacing */
+    padding: 0;
 }
 
-/* Prevent h1 from wrapping */
+/* Custom spacing for each element */
 .container h1 {
-    font-size: clamp(2rem, 5vw, 3rem); /* Responsive font size */
-    white-space: nowrap; /* Prevent wrapping */
-    color: white;
+    font-size: 3em; /* Adjust as needed */
     font-weight: bold;
+    color: #007bff; /* white color */
+    margin-bottom: 5px; /* Space between h1 and h2 */
+    white-space: nowrap; /* Prevent wrapping */
 }
 
-/* h2 styles */
 .container h2 {
     font-size: 2em;
     font-weight: 400;
-    color: white;
+    color: #555;
+    margin-bottom: 5px; /* Space between h2 and p */
 }
 
-/* p styles */
 .container p {
     font-size: 1.2em;
-    color: white;
-    max-width: 800px; /* Restrict width for better readability */
-    line-height: 1.5;
+    color: #333;
+    line-height: 1.5; /* Improve readability */
+    text-align: center;
+    max-width: 800px; /* Keep text width balanced */
 }
+
 
 
 footer {
@@ -150,7 +147,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background: black; /* Blue background */
+    background: black; /* Black background */
     color: #fff; /* White text color */
     position: fixed; /* Fixed position */
     bottom: 0; /* Stays at the bottom of the viewport */
@@ -173,28 +170,6 @@ footer {
     color: #ffc107; /* Gold color for hover */
 }
 
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
-    flex-grow: 1; /* Ensure the container takes up the remaining space */
-}
-
-.content {
-    width: 50%;
-    text-align: left;
-}
-
-.content h1 {
-    font-size: 2.5em;
-    font-weight: 100;
-    color: #007bff;
-}
-
-.content p {
-    font-size: 1.1em;
-}
 
 /* Under Construction Banner */
 .construction-banner {
