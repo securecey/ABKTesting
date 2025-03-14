@@ -211,16 +211,16 @@ body, html {
 }
 @keyframes changeBackground {
     0% {
-        background-image: url('C:/Users/vinee/Downloads/test/photo1.avif');
+        background-image: url('photo1.avif');
     }
     25% {
-        background-image: url('C:/Users/vinee/Downloads/test/photo2.avif');
+        background-image: url('photo2.avif');
     }
     50% {
-        background-image: url('C:/Users/vinee/Downloads/test/photo3.avif');
+        background-image: url('photo3.avif');
     }
     100% {
-        background-image: url('C:/Users/vinee/Downloads/test/photo4.avif');
+        background-image: url('photo4.avif');
     }
 }
 
